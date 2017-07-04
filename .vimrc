@@ -9,15 +9,11 @@ set timeoutlen=300
 set backspace=2
 set showcmd
 
-let g:lightline = {
-			\ 'colorscheme': 'gruvbox',
-			\ 'component': {
-			\ 'readonly': '%{&readonly?"":""}',
-			\ },
-			\ 'separator': { 'left': '', 'right': '' },
-			\ 'subseparator': { 'left': '', 'right': '' }
-			\ }
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+let g:airline_theme='gruvbox'
 
+set hlsearch
 set number
 set rnu
 set tabstop=4
@@ -30,15 +26,19 @@ set list
 set listchars=tab:\|\ ,trail:~,extends:>,precedes:<
 set splitright
 set splitbelow
+set mouse=a
 
 let mapleader = ","
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :bd<CR>
 nnoremap <Leader>z u<CR>
 nnoremap <Leader>r :redo<CR>
+
+" Go through buffers
+nnoremap <silent> <C-Right> :bn<CR>
+nnoremap <silent> <C-Left> :bp<CR>
 nnoremap <Tab> :bn<CR>
 nnoremap <S-Tab> :bp<CR>
-
 
 set undofile
 set undodir=~/.vim/undodir
@@ -70,24 +70,37 @@ autocmd FileType c,cpp,python,html,bash,vim,css,jinja,javascript,php,m,h,hpp,mak
 " NE DIRAJ!!!
 color gruvbox
 
+map Od <C-Left>
+map Oc <C-Right>
+map! Od <C-Left>
+map! Oc <C-Right>
+map Oa <C-Up>
+map Ob <C-Down>
+map! Oa <C-Up>
+map! Ob <C-Down>
+
+" fixed page scrolling
+noremap <C-Down> <C-E>
+noremap <C-Up> <C-Y>
+
 
 " HNEI arrows.
-noremap <buffer> <silent> e gk
-noremap <buffer> <silent> n gj
-noremap <silent> i l
+"noremap <buffer> <silent> e gk
+"noremap <buffer> <silent> n gj
+"noremap <silent> i l
 " Last search.
-noremap k n
-noremap K N
+"noremap k n
+"noremap K N
 " mark
-noremap j m
-noremap J M
+"noremap j m
+"noremap J M
 " _r_ = inneR text objects.
-onoremap r i
+"onoremap r i
 " l/L insert
-noremap l i
-noremap L I
+"noremap l i
+"noremap L I
 " EOW.
-noremap m e
-noremap M E
+"noremap m e
+"noremap M E
 
 

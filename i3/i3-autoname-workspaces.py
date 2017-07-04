@@ -48,10 +48,12 @@ WINDOW_ICONS = {
     'urxvt': fa.icons['terminal'],
     'terminator': fa.icons['terminal'],
     'termite': fa.icons['terminal'],
-    
+
     'google-chrome': fa.icons['chrome'],
+    'chromium': fa.icons['chrome'],
     'firefox': fa.icons['firefox'],
-   
+
+    'gitkraken': fa.icons['git'],
     'qbittorrent': fa.icons['cloud-download'],
     'telegram-desktop': fa.icons['telegram'],
 
@@ -59,7 +61,7 @@ WINDOW_ICONS = {
     'subl3': fa.icons['code'],
     'MATLAB': fa.icons['code'],
     'codeblocks': fa.icons['code'],
-    
+
     'nautilus': fa.icons['file'],
     'libreoffice': fa.icons['file-text-o'],
     'feh': fa.icons['picture-o'],

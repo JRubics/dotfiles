@@ -1,8 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/etc/httpd/conf'
 let g:netrw_dirhist_2='/home/pseudonick/bumblebee-status/bumblebee/outputs'
 let g:netrw_dirhist_3='/etc/httpd'
 let g:netrw_dirhist_4='/home/pseudonick/.config/terminator'
 let g:netrw_dirhist_5='/home/pseudonick/.vim'
 let g:netrw_dirhist_6='/home/pseudonick/fakultet/siit/2 godina/operativni_sistemi/Vezbe/05_Sinhronizacija_1/Resenja'
+let g:netrw_dirhist_7='/home/pseudonick/dev/tilda/website/frontend/src/containers/app'
+let g:netrw_dirhist_8='/home/pseudonick/.vim'

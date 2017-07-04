@@ -3,6 +3,7 @@ HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 setopt autocd extendedglob notify
+#setopt SOURCE_TRACE
 unsetopt beep nomatch
 bindkey -v
 # End of lines configured by zsh-newuser-install
@@ -32,7 +33,7 @@ antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Load the theme.
-antigen theme boban
+antigen theme agnoster
 # Tell antigen that you're done.
 antigen apply
 
@@ -58,7 +59,7 @@ alias -g mdr='mkdir'
 alias -g sleep='sudo systemctl suspend'
 alias -g df='df -h'
 alias -g du='du -h'
-
+alias -g ssh='env TERM=xterm-256color ssh'
 # grep
 alias -g G='| grep --color=auto'
 
@@ -72,6 +73,8 @@ alias -g update='yaourt -Syua'
 alias -g daj='yaourt -S'
 alias -g open='xdg-open'
 alias -g paja-ssh='ssh-allow-friend --github paxy97'
+alias -g tmux="TERM=screen-256color-bce tmux"
+
 # Config
 alias -g zshconf='vim ~/.zshrc'
 alias -g i3conf='vim ~/.config/i3/config'
@@ -81,3 +84,5 @@ alias -g myip='curl icanhazip.com'
 alias -g weather='curl wttr.in/Novi_Sad'
 
 source ~/.vim/bundle/gruvbox/gruvbox_256palette.sh
+
+eval $(keychain --eval --quiet id_rsa)

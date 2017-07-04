@@ -10,12 +10,12 @@ URxvt*font: xft:Hack:size=9:antialias=true
 !URxvt.internalBorder: -1
 
 ! terminal transparency
-URxvt.transparent:	true
-URxvt.shading:	20
+!URxvt.transparent:	true
+!URxvt.shading:	20
 
 URxvt*saveLines: 10000
 URxvt*scrollBar: false
-URxvt*letterSpace: -2
+URxvt*letterSpace: -1
 URxvt*termName: rxvt-unicode
 
 URxvt.keysym.Shift-Control-V: perl:clipboard:paste
